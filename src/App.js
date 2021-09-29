@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Particles from 'react-particles-js'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      By Kevin Munar
+    
+      <Particles
+  style={{ position: "relative" }}
+  height="95%"
+  width="95%"
+  className='particles'
+
+  params={{
+    particles: {
+      color: {
+        value: "#5bccf6"
+      },
+      line_linked: {
+        color: {
+          value: "#fcde67"
+        }
+      },
+      number: {
+        value: 100
+      },
+      size: {
+        value: 3
+      },
+      background:{
+        color:"#5bccf6"
+      }
+    }
+  }}
+/>
     </div>
   );
 }
