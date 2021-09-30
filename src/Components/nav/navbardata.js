@@ -22,7 +22,7 @@ export const SidebarData = [
     {
     title:'Blog',
     link:'/blog',
-    icon: <SiIcons.SiMircoDotBlog/>,
+    icon: <SiIcons.SiMicroDotBlog/>,
     cName: 'nav-text'
     },
     {

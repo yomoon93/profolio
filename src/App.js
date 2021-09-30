@@ -1,42 +1,36 @@
-import React from 'react'
-import './App.css'
-import Particles from 'react-particles-js'
-
+import React from "react";
+import "./App.css";
+import ParticlesString from "./Components/header/particles";
+import Navbar from "./Components/nav/navbar";
+import {BrowserRouter as Router,Switch, Route, BrowserRouter} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      By Kevin Munar
-    
-      <Particles
-  style={{ position: "relative" }}
-  height="95%"
-  width="95%"
-  className='particles'
+    <Router>
 
-  params={{
-    particles: {
-      color: {
-        value: "#5bccf6"
-      },
-      line_linked: {
-        color: {
-          value: "#fcde67"
-        }
-      },
-      number: {
-        value: 100
-      },
-      size: {
-        value: 3
-      },
-      background:{
-        color:"#5bccf6"
-      }
-    }
-  }}
-/>
-    </div>
+  <div className="App">
+
+        
+<ParticlesString />
+<Navbar />
+      <Switch>
+        <Route path="/" exact >
+        
+        </Route>
+        <Route path="/weather"> 
+          
+         
+        </Route>
+        <Route path="/saved">
+         
+          
+          </Route>  
+        <Route path="/contact"  />
+        <Route path="/blog"  />
+
+      </Switch>
+  </div>
+  </Router>
   );
 }
 

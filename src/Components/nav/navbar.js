@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import {Link} from 'react-router-dom'
-import {SidebarData} from './sidebardata'
-import '../navbar.css'
+import {SidebarData} from './navbardata'
+import '../nav/navbar.css'
 import {IconContext} from 'react-icons'
-import {ReactComponent as Logo} from '../img/MoonDoc250.svg'
+
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false)
@@ -18,7 +18,7 @@ function Navbar() {
                 <Link to='#' className='menu-bars'>
                     <FaIcons.FaBars onClick={showSidebar}/>
                 </Link>
-                <Logo className="logo"/>
+                {/* Logo goes here!!!! */}
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                 <ul className='nav-menu-items' onClick={showSidebar}>
@@ -44,9 +44,4 @@ function Navbar() {
     )
 }
 export default Navbar
-            </nav>
-        </IconContext.Provider>
-        </>
-    )
-}
-export default Navbar
+    
